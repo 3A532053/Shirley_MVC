@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34004.107
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShirleyWeb", "ShirleyWeb\ShirleyWeb.csproj", "{3005FB48-B9AB-4225-A304-422BACE5B624}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShirleyWebRazor_Temp", "ShirleyWebRazor_Temp\ShirleyWebRazor_Temp.csproj", "{471A59FD-BCAB-4E05-8703-10C712387284}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShirleyWebRazor_Temp", "ShirleyWebRazor_Temp\ShirleyWebRazor_Temp.csproj", "{471A59FD-BCAB-4E05-8703-10C712387284}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
