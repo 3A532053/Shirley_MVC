@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ShirleyWeb.Data;
+using Shirley.DataAccess.Data;
 
 #nullable disable
 
-namespace ShirleyWeb.Migrations
+namespace Shirley.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230902123417_SeedCategoryTable")]

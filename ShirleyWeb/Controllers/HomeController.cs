@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ShirleyWeb.Models;
+using Shirley.Models;
 using System.Diagnostics;
 
 namespace ShirleyWeb.Controllers

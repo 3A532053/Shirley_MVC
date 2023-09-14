@@ -1,4 +1,4 @@
-namespace ShirleyWeb.Models
+namespace Shirley.Models
 {
     public class ErrorViewModel
     {

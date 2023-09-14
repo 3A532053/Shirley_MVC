@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace ShirleyWeb.Migrations
+namespace Shirley.DataAccess.Migrations
 {
     /// <inheritdoc />
     public partial class AddCategoryTableToDb : Migration

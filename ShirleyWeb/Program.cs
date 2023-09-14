@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using ShirleyWeb.Data;
+using Shirley.DataAccess.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

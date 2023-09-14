@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using ShirleyWeb.Data;
-using ShirleyWeb.Models;
+using Shirley.DataAccess.Data;
+using Shirley.Models;
 
 namespace ShirleyWeb.Controllers
 {

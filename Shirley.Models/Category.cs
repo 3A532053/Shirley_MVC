@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace ShirleyWeb.Models
+namespace Shirley.Models
 {
     public class Category
     {
