@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Shirley.Models;
+using ShirleyBook.Models;
 
-namespace Shirley.DataAccess.Data
+namespace ShirleyBook.DataAccess.Data
 {
     public class ApplicationDbContext : DbContext
     {

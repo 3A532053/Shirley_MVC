@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using Shirley.Models;
+using ShirleyBook.Models;
 using System.Diagnostics;
 
-namespace ShirleyWeb.Controllers
+namespace ShirleyBookWeb.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

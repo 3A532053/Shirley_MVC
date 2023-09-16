@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shirley.Models\Shirley.Models.csproj" />
-    <ProjectReference Include="..\Shirley.Utility\Shirley.Utility.csproj" />
+    <ProjectReference Include="..\Shirley.Models\ShirleyBook.Models.csproj" />
+    <ProjectReference Include="..\Shirley.Utility\ShirleyBook.Utility.csproj" />
   </ItemGroup>
 
 </Project>
