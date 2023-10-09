@@ -9,6 +9,6 @@ namespace ShirleyBook.Models.ViewModels
     public class ShoppingCartVM
     {
         public IEnumerable<ShoppingCart> ShoppingCartList { get; set; }
-        public double OrderToatl { get; set; }
+        public OrderHeader OrderHeader { get; set; }
     }
 }
