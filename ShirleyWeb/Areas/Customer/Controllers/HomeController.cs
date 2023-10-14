@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShirleyBook.DataAccess.Repository.IRepository;
 using ShirleyBook.Models;
+using ShirleyBook.Utility;
 using System.Diagnostics;
 using System.Security.Claims;
 
@@ -27,7 +28,8 @@ namespace ShirleyBookWeb.Areas.Customer.Controllers
 
         public IActionResult Details(int productId)
         {
-            ShoppingCart cart = new() {
+            ShoppingCart cart = new()
+            {
                 Product = _unitOfWork.Product.Get(u => u.Id == productId, includeProperties: "Category"),
                 Count = 1,
                 ProductId = productId
@@ -47,16 +49,19 @@ namespace ShirleyBookWeb.Areas.Customer.Controllers
 
             if (cartFromDb != null)
             {
-                //shoppingcart exists
+                //shopping cart exists
                 cartFromDb.Count += shoppingCart.Count;
                 _unitOfWork.ShoppingCart.Update(cartFromDb);
+                _unitOfWork.Save();
             }
-            else {
-                //add shoppingcart record
+            else
+            {
+                //add cart record
                 _unitOfWork.ShoppingCart.Add(shoppingCart);
+                _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionCart, _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == userId).Count());
             }
             TempData["success"] = "Cart updated successfully";
-            _unitOfWork.Save();
 
             return RedirectToAction(nameof(Index));
         }
